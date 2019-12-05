@@ -22,7 +22,7 @@ describe('Guitar model', () => {
       });
 
       const { errors } = guitar.validateSync();
-      expect(errors.brand.message).toEqual('Cast to String failed for value \"{}\" at path \"brand\"');
+      expect(errors.brand.message).toEqual('Cast to String failed for value "{}" at path "brand"');
     });
   });
 
@@ -84,7 +84,7 @@ describe('Guitar model', () => {
       });
 
       const { errors } = guitar.validateSync();
-      expect(errors.woodType.message).toEqual('Cast to String failed for value \"[]\" at path \"woodType\"');
+      expect(errors.woodType.message).toEqual('Cast to String failed for value "[]" at path "woodType"');
     });
   });
 });
