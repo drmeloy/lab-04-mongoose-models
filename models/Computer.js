@@ -21,6 +21,6 @@ const schema = new mongoose.Schema({
     type: Boolean,
     required: true
   }
-})
+});
 
 module.exports = mongoose.model('Computer', schema);

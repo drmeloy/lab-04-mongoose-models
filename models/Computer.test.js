@@ -24,7 +24,7 @@ describe('Computer', () => {
       });
 
       const { errors } = computer.validateSync();
-      expect(errors.brand.message).toEqual('Cast to String failed for value \"[]\" at path \"brand\"');
+      expect(errors.brand.message).toEqual('Cast to String failed for value "[]" at path "brand"');
     });
   });
 
@@ -51,7 +51,7 @@ describe('Computer', () => {
       });
 
       const { errors } = computer.validateSync();
-      expect(errors.type.message).toEqual('Cast to String failed for value \"{}\" at path \"type\"');
+      expect(errors.type.message).toEqual('Cast to String failed for value "{}" at path "type"');
     });
   });
 
@@ -78,7 +78,7 @@ describe('Computer', () => {
       });
 
       const { errors } = computer.validateSync();
-      expect(errors.hd.message).toEqual('Cast to String failed for value \"[]\" at path \"hd\"');
+      expect(errors.hd.message).toEqual('Cast to String failed for value "[]" at path "hd"');
     });
   });
 
@@ -105,7 +105,7 @@ describe('Computer', () => {
       });
 
       const { errors } = computer.validateSync();
-      expect(errors.ram.message).toEqual('Cast to String failed for value \"[]\" at path \"ram\"');
+      expect(errors.ram.message).toEqual('Cast to String failed for value "[]" at path "ram"');
     });
   });
 
@@ -132,7 +132,7 @@ describe('Computer', () => {
       });
 
       const { errors } = computer.validateSync();
-      expect(errors.isGaming.message).toEqual('Cast to Boolean failed for value \"[]\" at path \"isGaming\"');
+      expect(errors.isGaming.message).toEqual('Cast to Boolean failed for value "[]" at path "isGaming"');
     });
-  })
+  });
 });
